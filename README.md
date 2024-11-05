@@ -48,7 +48,7 @@
 This repository hosts the code as well as the datasets used for the paper "Physics-informed Markov chains for remaining useful life prediction of wire bonds in power electronic modules". 
 Below is a graphical abstract providing a brief description. The link for the paper will soon be made available.
 
-![Uploading Portrait University Research Poster in Blue Pink Playful and Illustrative Style.png…]()
+![Portrait University Research Poster in Blue Pink Playful and Illustrative Style](https://github.com/user-attachments/assets/0c5596ff-81d3-4654-b04c-6e78dac4a9d8)
 
 
 
