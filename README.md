@@ -46,7 +46,7 @@
 ## About The Project
 
 This repository hosts the code as well as the datasets used for the paper "Physics-informed Markov chains for remaining useful life prediction of wire bonds in power electronic modules". 
-Below is a graphical abstract providing a brief description. The link for the paper will soon be made available.
+Below is a graphical abstract providing a brief description. The link for the paper will soon be made available, pending the acceptence of the paper in the Microelectronics Reliability journal.
 
 ![Portrait University Research Poster in Blue Pink Playful and Illustrative Style](https://github.com/user-attachments/assets/0c5596ff-81d3-4654-b04c-6e78dac4a9d8)
 
@@ -89,5 +89,4 @@ Project Link: [https://github.com/MehdiGhrabli/PIMC4RUL](https://github.com/Mehd
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Citation
-
-
+Pending the acceptence of the paper in the Microelectronics Reliability journal.
