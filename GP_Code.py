@@ -20,6 +20,7 @@ def get_GP(data_path,noise_std =0.2):
     Cross_section_analysis_cleaned['Number of cycles']/=np.max(Cross_section_analysis_cleaned['Number of cycles']) #Scale from 0 to 1
     # Scaling the collector emitter voltage     
     Cross_section_analysis_cleaned['delta Vce / Vce % ']*=2
+    
     # Initializing the model 
     kernel = 1 * RBF(length_scale=0.01, length_scale_bounds=(1e-4, 1e2))
     gaussian_process = GaussianProcessRegressor(
@@ -36,8 +37,8 @@ def get_GP(data_path,noise_std =0.2):
     y = y[Sort_indexx]
     X_train= X_train.reshape(-1,1)
     y = y.reshape(-1,1)
+    
     # Fitting the model 
-    
-    
     gaussian_process.fit(X_train, y)
+    
     return gaussian_process 
