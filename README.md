@@ -40,13 +40,15 @@
   </ol>
 </details>
 
+[Graphical abstract.pdf](https://github.com/user-attachments/files/17639149/Graphical.abstract.pdf)
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 This repository hosts the code as well as the datasets used for the paper "Physics-informed Markov chains for remaining useful life prediction of wire bonds in power electronic modules". 
-Below is a graphical abstract providing a brief description, and the link for the paper will soon be made available.
+Below is a graphical abstract providing a brief description. The link for the paper will soon be made available.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,6 +88,4 @@ Project Link: [https://github.com/MehdiGhrabli/PIMC4RUL](https://github.com/Mehd
 
 ## Citation
 
-<!-- ACKNOWLEDGMENTS -->
-## References
 
