@@ -40,7 +40,6 @@
   </ol>
 </details>
 
-[Graphical abstract.pdf](https://github.com/user-attachments/files/17639149/Graphical.abstract.pdf)
 
 
 <!-- ABOUT THE PROJECT -->
@@ -48,6 +47,9 @@
 
 This repository hosts the code as well as the datasets used for the paper "Physics-informed Markov chains for remaining useful life prediction of wire bonds in power electronic modules". 
 Below is a graphical abstract providing a brief description. The link for the paper will soon be made available.
+
+![Uploading Portrait University Research Poster in Blue Pink Playful and Illustrative Style.png…]()
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
