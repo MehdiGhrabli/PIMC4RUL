@@ -3,11 +3,11 @@ import numpy as np
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF
 # This python file contains the implementation of the gaussian process regression, linking the degradation to the health indicator. 
-# It contains one function which performs the regression, returning the regression function 
+# It contains one function, get_GP, which performs the regression, returning the regression function 
 # The input values are : 
 #     data_path : the path of the dataset containing Lc and Vce values, in our case it is the "Cross section analysis.xlsx" file
 #     noise_std : The noise standard deviation used in the regression, equal to 0.2 by default. This parameter controls the smoothness of the predictions.
-# The ouput value is a function that takes as input the Vce value and returns the corresponfing crack length 
+# The ouput value is a function that takes as input the Vce value and returns the corresponding crack length 
 def get_GP(data_path,noise_std =0.2):
     Cross_section_analysis = pd.read_excel(data_path)
     #Data preprocessing
