@@ -62,8 +62,11 @@ Under construction
 ## User guide
 
 The pipeline predicts iteratively the evolution of the health indicator $V_{ce}$. The prediction loop consists of 4 parts : 
-* Test 
-* Test 2
+* Inferring damage $l_c$ from indicator $V_{ce}$ using Gaussian Process Regression, coded in file GP_code.py  
+* Estimate mechanical properties from temperature swing $\Delta T$ and current crack $l_c$ in Generate_Features.py
+* Estimate the damage evolution using Kernel Density Estimation, visualized in KDE_vis.ipynb and implemented in full pipeline code main.py
+* Evaluate the indicator value using the Gaussian Process Regression's mean.
+The file main.py 
 
 ### Examples from the paper
 
