@@ -62,8 +62,8 @@ Under construction
 ## User guide
 
 The pipeline predicts iteratively the evolution of the health indicator $V_{ce}$. The prediction loop consists of 4 parts : 
-** Test 
-** Test 2
+* Test 
+* Test 2
 
 ### Examples from the paper
 
