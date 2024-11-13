@@ -67,14 +67,17 @@ The pipeline predicts iteratively the evolution of the health indicator $V_{ce}$
 * Estimate the damage evolution using Kernel Density Estimation, visualized in KDE_vis.ipynb and implemented in full pipeline code main.py
 * Evaluate the indicator value using the Gaussian Process Regression's mean.
 In order to utilize this pipeline, the user can download this project and execute a command in a command prompt in the same directory as the downloaded project.
+
 Example : 
 ```
-$
+python run.py Maze-Simple-v0 maze_baseline --horizon 75 --seed 0 --epochs 1500
 ```
 
 ### Examples from the paper
 
-Under construction
+```
+python run.py Maze-Simple-v0 maze_baseline --horizon 75 --seed 0 --epochs 1500
+```
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -92,6 +95,8 @@ Under construction
 
 <!-- CONTACT -->
 ## Contact
+For any inquires or suggestions : 
+
 Mehdi Ghrabli  - mehdi.ghrabli1@ens-paris-saclay.fr
 
 Project Link: [https://github.com/MehdiGhrabli/PIMC4RUL](https://github.com/MehdiGhrabli/PIMC4RUL)
