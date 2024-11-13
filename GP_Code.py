@@ -19,7 +19,7 @@ def get_GP(data_path,noise_std =0.2):
     # Scaling the number of cycles
     Cross_section_analysis_cleaned['Number of cycles']/=np.max(Cross_section_analysis_cleaned['Number of cycles']) #Scale from 0 to 1
     # Scaling the collector emitter voltage     
-    Cross_section_analysis_cleaned['delta Vce / Vce % ']*=2
+    Cross_section_analysis_cleaned['delta Vce / Vce %']*=2
     
     # Initializing the model 
     kernel = 1 * RBF(length_scale=0.01, length_scale_bounds=(1e-4, 1e2))
@@ -28,7 +28,7 @@ def get_GP(data_path,noise_std =0.2):
     )
     
     # formatting the data
-    X_train= np.array(Cross_section_analysis_cleaned['delta Vce / Vce % '])
+    X_train= np.array(Cross_section_analysis_cleaned['delta Vce / Vce %'])
     y = np.array(Cross_section_analysis_cleaned['Contact area reduction %'])
     X_train = np.concatenate([np.array(1000*[0]),X_train])
     y = np.concatenate([np.array(1000*[-1]),y])
