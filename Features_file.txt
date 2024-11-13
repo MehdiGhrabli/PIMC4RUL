@@ -1,0 +1,4 @@
+Contact_Radius_Length
+Stress_Contact_1
+Total_Strain_Contact_1
+Total_Displacement_Contact_1
