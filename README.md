@@ -100,7 +100,7 @@ The list of arguments is the following :
 ### Examples from the paper
 
 ```
-python run.py Maze-Simple-v0 maze_baseline --horizon 75 --seed 0 --epochs 1500
+python run_pipeline.py --train-data-path train_data_files_standard_70.txt --test-data-path data\Runs_to_failure_70\Rth Module 33L.xlsx --data-size 40 --bwp 0.01 --gs 0.2 --start-cycle-index 10 
 ```
 
 <!-- ROADMAP -->
