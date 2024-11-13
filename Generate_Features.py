@@ -175,9 +175,9 @@ for i in tqdm(range(gen_size)):
         Reg_SnC1 = SnC1*Sig["Total_Strain_Contact_1"] +Mu["Total_Strain_Contact_1"]
         Reg_SnC2 = SnC2*Sig["Total_Strain_Contact_2"] +Mu["Total_Strain_Contact_2"]
         Reg_SnM1 = SnM1*Sig["Total_Strain_Metal_1"] +Mu["Total_Strain_Metal_1"]
-        Reg_DC1 = DC1*Sig["Total_Deformation_Contact_1"] +Mu["Total_Deformation_Contact_1"]
-        Reg_DC2 = DC2*Sig["Total_Deformation_Contact_2"] +Mu["Total_Deformation_Contact_2"]
-        Reg_DM1 = DM1*Sig["Total_Deformation_Metal_1"] +Mu["Total_Deformation_Metal_1"]
+        Reg_DC1 = DC1*Sig["Total_Displacement_Contact_1"] +Mu["Total_Displacement_Contact_1"]
+        Reg_DC2 = DC2*Sig["Total_Displacement_Contact_2"] +Mu["Total_Displacement_Contact_2"]
+        Reg_DM1 = DM1*Sig["Total_Displacement_Metal_1"] +Mu["Total_Displacement_Metal_1"]
         Reg_props = [Reg_SC1,Reg_SC2,Reg_SM1,Reg_SnC1,Reg_SnC2,Reg_SnM1,Reg_DC1,Reg_DC2,Reg_DM1]
         # Dataframe containing denormalized features and mechanical properties
         unnormalized_df = pd.concat([ unnormalized_df, pd.DataFrame([[current_data[0][j],Sample,Reg_SC1,Reg_SC2,Reg_SM1,Reg_SnC1,Reg_SnC2,Reg_SnM1,Reg_DC1,Reg_DC2,Reg_DM1,Temp,T_min]], columns=unnormalized_df.columns) ], ignore_index=True)
