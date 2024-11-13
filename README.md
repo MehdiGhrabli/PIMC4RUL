@@ -64,7 +64,7 @@ Under construction
 The pipeline predicts iteratively the evolution of the health indicator $V_{ce}$. The prediction loop consists of 4 parts : 
 * Inferring damage $l_c$ from indicator $V_{ce}$ using Gaussian Process Regression, coded in file GP_code.py  
 * Estimate mechanical properties from temperature swing $\Delta T$ and current crack $l_c$ in Generate_Features.py
-* Estimate the damage evolution using Kernel Density Estimation, visualized in KDE_vis.ipynb and implemented in full pipeline code main.py
+* Estimate the damage evolution using Kernel Density Estimation, visualized in KDE_vis.ipynb and implemented in full pipeline code run_pipeline.py
 * Evaluate the indicator value using the Gaussian Process Regression's mean.
 In order to utilize this pipeline, the user can download this project and execute a command in a command prompt in the same directory as the downloaded project.
 
@@ -110,8 +110,8 @@ python run.py Maze-Simple-v0 maze_baseline --horizon 75 --seed 0 --epochs 1500
 - [x] Submit commented code
 - [ ] Link the research paper
 - [x] Provide a user guide 
-- [ ] Incorporate data generation as an indenpendant function to be used in run.py
-- [ ] Incorporate SVR functions as an indenpendant function to be used in run.py
+- [ ] Incorporate data generation as an indenpendant function to be used in run_pipeline.py
+- [ ] Incorporate SVR functions as an indenpendant function to be used in run_pipeline.py
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
