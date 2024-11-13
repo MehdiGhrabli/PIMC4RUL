@@ -70,8 +70,32 @@ In order to utilize this pipeline, the user can download this project and execut
 
 Example : 
 ```
-python run.py Maze-Simple-v0 maze_baseline --horizon 75 --seed 0 --epochs 1500
+python run_pipeline.py --bwp 0.01 --confidence 90 --number_of_montecarlo_iterations 100
 ```
+In this example, bwp, confidence and number_of_montecarlo_iterations are arguments to be adjusted by the user, depending on the use case. 
+The list of arguments is the following : 
+* simulated-data-path : The path of the simulated data, set to data\Simulated_data.csv by default
+* initial-contact-length : The initial contact length (in mm) between the wire and the metallization, 0.3615 by default
+* eps : An arbitrarly small value to avoid numerical errors, taken to be equal to $10^{-8}\times 0.3615$.
+* t-min : The minimum temperature of the cycle, equal to $55°C$ in this work
+* svr-kernel : The kernel used in the support vector regression, rbf by default
+* svr-c :
+* svr-gamma :
+* destructive-data-path : The path of the destructive data, linking $V_{ce}$ to $l_c$, data\Cross section analysis.xlsx in this repository
+* train-data-path : A file containing the paths of runs to failure to be used in training, train_data_files_standard_70.txt for example
+* test-data-path : Path of the test run, data\Runs_to_failure_70\Rth Module 33L.xlsx for example
+* history-size : Size of historic data, equal to 2 by default
+* prediction-size : Size of predictions, equal to 1 by default
+* data-size : Number of synthetic runs to failure to be used
+* path-of-generated-data : 
+* used-features-path :
+* bwp :
+* gp-std : Gaussian process regression's standard deviation parameter
+* kde-kernel : Kernel density estimation kernel, taken as gaussian
+* start-cycle-index : 
+* confidence : Level of the confidence interval to be adjusted according to the user's preference, 0.9 by default
+* number-of-montecarlo-iterations : Number of Monte Carlo iterations, set to 100 
+* regular-data-path :
 
 ### Examples from the paper
 
@@ -83,9 +107,9 @@ python run.py Maze-Simple-v0 maze_baseline --horizon 75 --seed 0 --epochs 1500
 ## Roadmap
 
 - [x] Submit datasets
-- [ ] Submit commented code
+- [x] Submit commented code
 - [ ] Link the research paper
-- [ ] Provide a user guide 
+- [x] Provide a user guide 
 - [ ] Incorporate data generation as an indenpendant function to be used in run.py
 - [ ] Incorporate SVR functions as an indenpendant function to be used in run.py
 
