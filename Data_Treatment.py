@@ -9,10 +9,7 @@ def get_period(Data_set):
   #   Data_set : a pandas dataframe containing the run to failure data
   # Output :
   #   The average step size
-  try :
-    N = np.array(Data_set["N° de cycle"])
-  except:
-    N = np.array(Data_set["N° de cycle\n"])
+  N = np.array(Data_set["Number of cycles"])
   diff = N[1:]-N[:-1]
   return np.mean(diff)
 
@@ -23,14 +20,8 @@ def get_sampled(Data_set,step_size):
   # Output :
   #   length_of_interp : a list containing the cycle indices (uniformly spaced by step_size)
   #   Vce_interp[length_of_interp] : Vce values, adjusted to the cycles in length_of_interp
-  try :
-    N = np.array(Data_set["N° de cycle"])
-  except :
-    N = np.array(Data_set["N° de cycle\n"])
-  try :
-    Vce = np.array(Data_set["%Vce corrigé"])
-  except :
-    Vce = np.array(Data_set["%Vce corrigé\n"])
+  N = np.array(Data_set["Number of cycles"])
+  Vce = np.array(Data_set["delta Vce / Vce %"])
   Vce_interp = np.interp(np.arange(0,N[-1]+1+step_size),N,Vce)
   length_of_sequence = int(N[-1]//step_size) +1
   length_of_interp = list(step_size*np.arange(length_of_sequence))
@@ -45,13 +36,13 @@ def get_sampled_varied(Data_set,step_size):
   #   length_of_interp : a list containing the cycle indices (uniformly spaced by step_size)
   #   Vce_interp[length_of_interp] : Vce values, adjusted to the cycles in length_of_interp
   try :
-    N = np.array(Data_set["N° de cycle"])
+    N = np.array(Data_set["Number of cycles"])
   except :
-    N = np.array(Data_set["N° de cycle\n"])
+    N = np.array(Data_set["Number of cycles"])
   try :
-    Vce = np.array(Data_set["%Vce corrigé"])
+    Vce = np.array(Data_set["delta Vce / Vce %"])
   except :
-    Vce = np.array(Data_set["%Vce corrigé\n"])
+    Vce = np.array(Data_set["delta Vce / Vce %"])
   begin_point = random.randint(0, step_size-1)
   Vce_interp = np.interp(np.arange(0,N[-1]+1+step_size),N,Vce)
   length_of_sequence = int(N[-1]//step_size) +1
