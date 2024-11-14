@@ -116,13 +116,13 @@ Standard predictions with $\Delta T = 110°C$
 python run_pipeline.py --train-data-path train_data_files_standard_110.txt --test-data-path data\Runs_to_failure_110\Rth Module 21L.xlsx --data-size 100 --bwp 0.01 --gp-std 0.2 --start-cycle-index 10 --confidence 0.90 --number-of-montecarlo-iterations 100
 ```
 
-Standard predictions with $\Delta T = 70°C$ 
+Extrapolation with $\Delta T = 70°C$ 
 
 ```
 python run_pipeline.py --train-data-path train_data_files_standard_70.txt --test-data-path data\Runs_to_failure_70\Rth Module 33L.xlsx --data-size 40 --bwp 0.01 --gp-std 0.2 --start-cycle-index 10 
 ```
 
-Standard predictions with $\Delta T = 70°C$ 
+Interpolation with $\Delta T = 90°C$ 
 
 ```
 python run_pipeline.py --train-data-path train_data_files_standard_70.txt --test-data-path data\Runs_to_failure_70\Rth Module 33L.xlsx --data-size 40 --bwp 0.01 --gp-std 0.2 --start-cycle-index 10 
