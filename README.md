@@ -66,6 +66,7 @@ The pipeline predicts iteratively the evolution of the health indicator $V_{ce}$
 * Estimate mechanical properties from temperature swing $\Delta T$ and current crack $l_c$ in Generate_Features.py
 * Estimate the damage evolution using Kernel Density Estimation, visualized in KDE_vis.ipynb and implemented in full pipeline code run_pipeline.py
 * Evaluate the indicator value using the Gaussian Process Regression's mean.
+
 In order to utilize this pipeline, the user can download this project and execute a command in a command prompt in the same directory as the downloaded project.
 
 Example : 
