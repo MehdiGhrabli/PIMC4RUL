@@ -152,5 +152,6 @@ Project Link: [https://github.com/MehdiGhrabli/PIMC4RUL](https://github.com/Mehd
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Citation
-Pending the acceptence of the paper in the Microelectronics Reliability journal.
+## DOI 
+[https://doi.org/10.1016/j.microrel.2025.115644](https://doi.org/10.1016/j.microrel.2025.115644)
+
