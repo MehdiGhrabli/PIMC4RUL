@@ -128,15 +128,6 @@ Interpolation with $\Delta T = 90°C$
 ```
 python run_pipeline.py --train-data-path train_data_files_interpolation_90.txt --test-data-path "data\Runs_to_failure_90\Rth Module 27L.xlsx" --data-size 40 --bwp 0.00775 --gp-std 0.2 --start-cycle-index 10 
 ```
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Submit datasets
-- [x] Submit commented code
-- [ ] Link the research paper
-- [x] Provide a user guide 
-- [ ] Incorporate data generation as an indenpendant function to be used in run_pipeline.py
-- [ ] Incorporate SVR functions as an indenpendant function to be used in run_pipeline.py
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +137,7 @@ python run_pipeline.py --train-data-path train_data_files_interpolation_90.txt -
 ## Contact
 For any inquires or suggestions : 
 
-Mehdi Ghrabli  - mehdi.ghrabli1@ens-paris-saclay.fr
+Mehdi Ghrabli  - mehdighrabli14[at]gmail[dot]com
 
 Project Link: [https://github.com/MehdiGhrabli/PIMC4RUL](https://github.com/MehdiGhrabli/PIMC4RUL)
 
